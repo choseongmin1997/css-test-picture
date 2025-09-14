@@ -8,6 +8,11 @@
 </head>
 <body>
 
+    <!-- 로딩 스피너 -->
+    <div id="loading-spinner" class="spinner-overlay" hidden>
+        <div class="spinner"></div>
+    </div>
+
     <!-- 편집 도구 (Toolbar) -->
     <div id="editor-toolbar" class="editor-toolbar" hidden>
         <div class="toolbar-header">
@@ -22,7 +27,25 @@
                 <label for="image-height">세로 (px)</label>
                 <input type="number" id="image-height" readonly>
             </div>
-            <!-- 향후 다른 편집 기능이 여기에 추가됩니다. -->
+            <div class="tool-group">
+                <label for="block-size">블록 크기 (px)</label>
+                <input type="number" id="block-size" value="10" min="1">
+            </div>
+            <div class="tool-group">
+                <button id="mosaic-button" class="action-button">
+                    모자이크
+                </button>
+            </div>
+            <div class="tool-group">
+                <button id="hex-mosaic-button" class="action-button" style="background-color: #fd7e14;">
+                    육각형 모자이크 (개념)
+                </button>
+            </div>
+            <div class="tool-group">
+                <button id="download-button" class="action-button" style="background-color: #28a745;">
+                    이미지 다운로드
+                </button>
+            </div>
         </div>
     </div>
 
