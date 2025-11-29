@@ -1,0 +1,83 @@
+body {
+  font-family: sans-serif;
+}
+
+hr {
+  height: 0.5em;
+  background: grey;
+  margin-bottom: 2em;
+}
+
+h2 {
+  padding-left: 1.5em;
+}
+
+h1 {
+  color: darkgreen;
+}
+
+ul {
+  background: white;
+}
+
+nav > ul {
+  background: blue;
+  border: 2px solid red;
+}
+
+p {
+  margin-top: 2em;
+}
+
+h2 + p {
+  margin-top: 0;
+  padding: 1em;
+  border: 2px solid gray;
+  background: #eeeeee;
+  border-radius: 1.3em;
+}
+
+h3.important ~ p {
+  margin-top: 0;
+  color: red;
+}
+
+a[title] {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+a[href^="http"] {
+  padding-left: 30px;
+}
+
+input[type="text"] {
+  border: 2px solid black;
+}
+
+input[type="submit"] {
+  background: blue;
+  color: white;
+}
+
+ul.pseudo {
+  border: 1px solid #000;
+}
+
+ul.pseudo li {
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
+  padding: 1em;
+}
+
+ul.pseudo li:last-child {
+  border-bottom: none;
+}
+
+ul.nth-child li:nth-child(3) {
+  color: red;
+}
+
+article p:nth-of-type(3) {
+  color: red;
+}
