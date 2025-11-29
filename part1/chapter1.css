@@ -81,3 +81,31 @@ ul.nth-child li:nth-child(3) {
 article p:nth-of-type(3) {
   color: red;
 }
+
+ol.nba-table {
+  list-style: none;
+  border: 1px solid #000;
+}
+
+ol.nba-table li {
+  padding: 0.3em;
+  border-bottom: 1px solid #000;
+}
+
+ol.nba-table li:nth-child(-n + 6) {
+  background: green;
+}
+
+ol.nba-table li:nth-child(n + 7):nth-child(-n + 10) {
+  background: blue;
+  color: white;
+}
+
+ol.nba-table li:nth-last-child(-n + 5) {
+  background: gray;
+  color: white;
+}
+
+ol.nba-table li:last-child {
+  border-bottom: none;
+}

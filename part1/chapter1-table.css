@@ -1,0 +1,68 @@
+h1 {
+  padding: 1em;
+  background: black;
+  color: white;
+}
+
+ol {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 5px; /* 항목 사이의 간격 (선택 사항) */
+  list-style: none; /* 숫자 마커 제거 (선택 사항) */
+  padding: 1em;
+  border: 2px solid gray;
+}
+
+input {
+  display: none;
+}
+
+label {
+  padding: 0.3em 2em;
+  background: white;
+  border: 2px solid blue;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input:checked ~ ol li {
+  padding: 1em;
+  width: 2em;
+  opacity: 0.3;
+  transform: scale(0.7);
+}
+
+input[value="6"]:checked ~ ol li:nth-child(6n) {
+  background: #333;
+  color: white;
+  opacity: 1;
+  transform: scale(1);
+}
+
+input[value="2"]:checked ~ ol li:nth-child(2n) {
+  background: #333;
+  color: white;
+  opacity: 1;
+  transform: scale(1);
+}
+
+input[value="3"]:checked ~ ol li:nth-child(3n) {
+  background: #333;
+  color: white;
+  opacity: 1;
+  transform: scale(1);
+}
+
+input[value="4"]:checked ~ ol li:nth-child(4n) {
+  background: #333;
+  color: white;
+  opacity: 1;
+  transform: scale(1);
+}
+
+input[value="5"]:checked ~ ol li:nth-child(5n) {
+  background: #333;
+  color: white;
+  opacity: 1;
+  transform: scale(1);
+}
