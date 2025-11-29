@@ -1,11 +1,41 @@
 body {
-    font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
-h1 {
-    color: darkslateblue;
+main {
+  /* Or whatever element contains your main content */
+  flex-grow: 1; /* Allows main content to expand and fill space */
+}
+
+footer {
+  /* Optional: Add styling for your footer */
+  margin-top: 1em;
 }
 
 a {
-    color: cornflowerblue;
+  color: cornflowerblue;
+}
+
+hr {
+  height: 0.5em;
+  background: grey;
+  margin-bottom: 2em;
+}
+
+h2 {
+  padding-left: 1.5em;
+}
+
+p {
+  margin-top: 2em;
+}
+
+h2 + p {
+  margin-top: 0;
+  padding: 1em;
+  border: 2px solid gray;
+  background: #eeeeee;
+  border-radius: 1.3em;
 }
