@@ -1,11 +1,48 @@
-body {
-    font-family: sans-serif;
+.paddingbox {
+  background: #ccc;
+  border: 1 0px solid rgba(0, 0, 0, 0.7);
+  background-clip: padding-box;
+  padding: 0.5em;
+  margin: 0.5em;
 }
 
-h1 {
-    color: darkgreen;
+.contentbox {
+  background: #ccc;
+  border: 10px solid rgba(0, 0, 0, 0.7);
+  background-clip: content-box;
+  padding: 0.5em;
+  margin: 0.5em;
 }
 
-a {
-    color: forestgreen;
+.imagebox {
+  /* padding: 0.5em; */
+  margin: 0.5em;
+  background-size: cover;
+  background: url("/images/cover1.png");
+  width: 600px;
+  height: 600px;
+}
+
+.blockquote {
+  font-size: 24px;
+  text-align: center;
+  height: 200px;
+  line-height: 200px;
+  background: url(/images/quote-open.png) top left no-repeat,
+    url(/images/quote-closed.png) bottom right no-repeat;
+}
+
+.opening {
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  border: 5px solid black;
+  background: url(/images/cover-left.png) no-repeat,
+    url(/images/cover-right.png) right no-repeat,
+    url(/images/cover1.png) 0 0 / cover;
+  transition: 1s;
+}
+
+.opening:hover {
+  background-position: -300px 0, 600px 0, 0 0;
 }

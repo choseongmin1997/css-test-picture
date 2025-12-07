@@ -33,9 +33,19 @@ p {
 }
 
 h2 + p {
+  white-space: pre-wrap;
   margin-top: 0;
   padding: 1em;
   border: 2px solid gray;
   background: #eeeeee;
   border-radius: 1.3em;
+}
+
+.panel {
+  white-space: pre-wrap;
+  padding: 0.5em;
+  background-clip: padding-box;
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  border: 10px solid rgba(0, 0, 0, 0.1);
 }
